@@ -1,0 +1,12 @@
+{
+  "name": "number-guesser-game",
+  "version": "1.0.0",
+  "description": "A simple number guessing game",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}

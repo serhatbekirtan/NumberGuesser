@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guesser Game</title>
+    <link rel="stylesheet" href="src/styles/styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Number Guesser</h1>
+      <p class="game-instructions">Guess a number between 1 and 100!</p>
+
+      <form id="guess-form" class="guess-form">
+        <input
+          type="number"
+          id="guess-input"
+          class="guess-input"
+          min="1"
+          max="100"
+          required
+          placeholder="Enter your guess"
+        />
+        <button type="submit" class="submit-btn">Submit Guess</button>
+      </form>
+
+      <div id="message" class="message"></div>
+
+      <div class="game-info">
+        <p>Attempts: <span id="attempts">0</span></p>
+        <div id="previous-guesses" class="previous-guesses">
+          <h3>Previous Guesses:</h3>
+          <div class="guesses-list"></div>
+        </div>
+      </div>
+
+      <button id="replay-btn" class="replay-btn" style="display: none">
+        Play Again
+      </button>
+    </div>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
