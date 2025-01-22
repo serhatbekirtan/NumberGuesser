@@ -116,6 +116,78 @@ h1 {
   font-size: 0.9rem;
 }
 
+.username-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.username-input {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 60%;
+}
+
+.username-input:focus {
+  border-color: #667eea;
+}
+
+.ranking-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.ranking-section h2 {
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.ranking-table-container {
+  overflow-x: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ranking-table th,
+.ranking-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ranking-table th {
+  background: #667eea;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.ranking-table tr:nth-child(even) {
+  background: #f7fafc;
+}
+
+.ranking-table tr:hover {
+  background: #edf2f7;
+}
+
 @media (max-width: 480px) {
   .guess-form {
     flex-direction: column;
